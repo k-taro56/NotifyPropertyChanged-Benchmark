@@ -1,0 +1,36 @@
+name: .NET Benchmark
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Run benchmark
+        run: cd NotifyPropertyChangedBenchmark && dotnet run -c Release --exporters json --filter '*'
+
+      - name: Store benchmark result
+        uses: rhysd/github-action-benchmark@v1
+        with:
+          tool: 'benchmarkdotnet'
+          output-file-path: NotifyPropertyChangedBenchmark/BenchmarkDotNet.Artifacts/results/NotifyPropertyChangedBenchmark.Benchmark-report-full-compressed.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          benchmark-data-dir-path: ""
