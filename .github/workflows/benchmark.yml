@@ -30,7 +30,7 @@ jobs:
         uses: rhysd/github-action-benchmark@v1
         with:
           tool: 'benchmarkdotnet'
-          output-file-path: NotifyPropertyChangedBenchmark/BenchmarkDotNet.Artifacts/results/NotifyPropertyChangedBenchmark.Benchmark-report-full-compressed.json
+          output-file-path: NotifyPropertyChangedBenchmark/BenchmarkDotNet.Artifacts/results/NotifyPropertyChangedBenchmark.Test-report-full-compressed.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
           auto-push: true
           benchmark-data-dir-path: ""
