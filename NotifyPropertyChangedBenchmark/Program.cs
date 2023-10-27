@@ -9,7 +9,7 @@ internal class Program
 {
 	private static void Main(string[] args)
 	{
-		BenchmarkRunner.Run<Test>();
+		BenchmarkRunner.Run<Test>(null!, args);
 	}
 }
 
