@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1698881184882,
+  "lastUpdate": 1700244640744,
   "repoUrl": "https://github.com/k-taro56/NotifyPropertyChangedBenchmark",
   "entries": {
     "Benchmark": [
@@ -72,6 +72,42 @@ window.BENCHMARK_DATA = {
             "value": 1.8295403157671293,
             "unit": "ns",
             "range": "± 0.07593842107849168"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "121674121+k-taro56@users.noreply.github.com",
+            "name": "k-taro56",
+            "username": "k-taro56"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b291b72c9102d26256350ac8dde26c548b9a39a9",
+          "message": "Merge pull request #19 from k-taro56/feature/dotnet8\n\n.NET 8 Support",
+          "timestamp": "2023-11-18T03:09:21+09:00",
+          "tree_id": "0d05c67cff51437fbaf25238daa8b97791ee06fc",
+          "url": "https://github.com/k-taro56/NotifyPropertyChangedBenchmark/commit/b291b72c9102d26256350ac8dde26c548b9a39a9"
+        },
+        "date": 1700244639609,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "NotifyPropertyChangedBenchmark.Test.NotUseCach",
+            "value": 9.445932617783546,
+            "unit": "ns",
+            "range": "± 0.04033861928278314"
+          },
+          {
+            "name": "NotifyPropertyChangedBenchmark.Test.UseCach",
+            "value": 0.49461318871804644,
+            "unit": "ns",
+            "range": "± 0.0078084235737702155"
           }
         ]
       }
