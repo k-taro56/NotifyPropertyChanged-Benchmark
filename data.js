@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704494115349,
+  "lastUpdate": 1722996438831,
   "repoUrl": "https://github.com/k-taro56/NotifyPropertyChangedBenchmark",
   "entries": {
     "Benchmark": [
@@ -180,6 +180,42 @@ window.BENCHMARK_DATA = {
             "value": 0.46638399933775265,
             "unit": "ns",
             "range": "± 0.010018695685974861"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "121674121+k-taro56@users.noreply.github.com",
+            "name": "Kawahara Shotaro",
+            "username": "k-taro56"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ede8be76330c799cbb4231133b758ac835734950",
+          "message": "Merge pull request #22 from k-taro56/dependabot/nuget/BenchmarkDotNet-0.14.0\n\nBump BenchmarkDotNet from 0.13.12 to 0.14.0",
+          "timestamp": "2024-08-07T11:05:53+09:00",
+          "tree_id": "46ee73ab9351a50dff863320bdc32d00d3396cea",
+          "url": "https://github.com/k-taro56/NotifyPropertyChangedBenchmark/commit/ede8be76330c799cbb4231133b758ac835734950"
+        },
+        "date": 1722996438304,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "NotifyPropertyChangedBenchmark.Test.NotUseCach",
+            "value": 9.86299388913008,
+            "unit": "ns",
+            "range": "± 0.022173038304982004"
+          },
+          {
+            "name": "NotifyPropertyChangedBenchmark.Test.UseCach",
+            "value": 0.4879972857556173,
+            "unit": "ns",
+            "range": "± 0.01279653000652459"
           }
         ]
       }
